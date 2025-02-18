@@ -1,11 +1,13 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f7fc;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;  /* จัดเนื้อหากลางในแนวนอน */
+    align-items: center;      /* จัดเนื้อหากลางในแนวตั้ง */
+    height: 100vh;            /* กำหนดความสูงให้เต็มหน้าจอ */
+    margin: 0;                /* เอาช่องว่างรอบๆ ออก */
+    font-family: Arial, sans-serif; /* เลือกฟอนต์ */
 }
 .container {
+    text-align: center;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
@@ -27,6 +29,24 @@ body {
     background: #d1dae6;
     transform: scale(1.02);
 }
+.user-list {
+    display: flex;
+    justify-content: center;  /* จัดเนื้อหากลางในแนวนอน */
+    align-items: center;      /* จัดเนื้อหากลางในแนวตั้ง */
+    flex-direction: column;   /* ให้รายการอยู่ในแนวตั้ง */
+}
+
+.list-group-item {
+    text-align: center;       /* จัดข้อความภายในแต่ละรายการให้ตรงกลาง */
+    border: 2px solid #007bff; /* กรอบสีน้ำเงิน */
+    border-radius: 5px;       /* มุมโค้งมน */
+    padding: 10px 20px;       /* เว้นช่องว่างรอบๆ ข้อความ */
+    margin: 5px 0;            /* เว้นระยะห่างระหว่างรายการ */
+    width: 100%;              /* ให้กรอบขยายเต็มความกว้าง */
+    max-width: 300px;         /* จำกัดความกว้างสูงสุด */
+    box-sizing: border-box;   /* รวมกรอบและ padding ในขนาดรวม */
+}
+
 .back-button {
     display: inline-block;
     margin: 15px;

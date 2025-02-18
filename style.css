@@ -45,7 +45,7 @@ body {
     width: 100%;              /* ให้กรอบขยายเต็มความกว้าง */
     max-width: 300px;         /* จำกัดความกว้างสูงสุด */
     box-sizing: border-box;   /* รวมกรอบและ padding ในขนาดรวม */
-}
+} 
 
 .back-button {
     display: inline-block;

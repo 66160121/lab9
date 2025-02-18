@@ -1,0 +1,7 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.user-list, .user-detail, .posts-list {
+    margin-top: 20px;
+}

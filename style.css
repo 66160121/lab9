@@ -1,88 +1,121 @@
 body {
-    display: flex;
-    justify-content: center;  /* จัดเนื้อหากลางในแนวนอน */
-    align-items: center;      /* จัดเนื้อหากลางในแนวตั้ง */
-    height: 100vh;            /* กำหนดความสูงให้เต็มหน้าจอ */
-    margin: 0;                /* เอาช่องว่างรอบๆ ออก */
-    font-family: Arial, sans-serif; /* เลือกฟอนต์ */
-}
-.container {
-    text-align: center;
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-.user-item, .post-item {
-    background: #e3eaf2;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-weight: 500;
-}
-.user-item:hover, .post-item:hover {
-    background: #d1dae6;
-    transform: scale(1.02);
-}
-.user-list {
-    display: flex;
-    justify-content: center;  /* จัดเนื้อหากลางในแนวนอน */
-    align-items: center;      /* จัดเนื้อหากลางในแนวตั้ง */
-    flex-direction: column;   /* ให้รายการอยู่ในแนวตั้ง */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.list-group-item {
-    text-align: center;       /* จัดข้อความภายในแต่ละรายการให้ตรงกลาง */
-    border: 2px solid #007bff; /* กรอบสีน้ำเงิน */
-    border-radius: 5px;       /* มุมโค้งมน */
-    padding: 10px 20px;       /* เว้นช่องว่างรอบๆ ข้อความ */
-    margin: 5px 0;            /* เว้นระยะห่างระหว่างรายการ */
-    width: 100%;              /* ให้กรอบขยายเต็มความกว้าง */
-    max-width: 300px;         /* จำกัดความกว้างสูงสุด */
-    box-sizing: border-box;   /* รวมกรอบและ padding ในขนาดรวม */
-} 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+}
 
 .back-button {
     display: inline-block;
-    margin: 15px;
-    padding: 10px 20px;
-    background: #007bff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #4CAF50;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s;
+    border-radius: 5px;
+    font-size: 1.2em;
 }
+
 .back-button:hover {
-    background: #0056b3;
+    background-color: #45a049;
 }
-.view-posts-btn, .toggle-comments {
-    background: #28a745;
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-list p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.posts-list {
+    margin-top: 20px;
+}
+
+.posts-list .post {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.posts-list .post h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.posts-list .post p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.view-posts-btn {
+    background-color: #2196F3;
     color: white;
-    padding: 12px 16px;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 12px;
-    border-radius: 6px;
-    transition: background 0.3s;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1em;
 }
-.view-posts-btn:hover, .toggle-comments:hover {
-    background: #218838;
+
+.view-posts-btn a {
+    color: white;
+    text-decoration: none; 
 }
-.comments {
-    background: #eef2f6;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 12px;
-    text-align: left;
+
+.view-posts-btn:hover {
+    background-color: #1976D2;
 }
-.comments p {
-    margin: 5px 0;
-    font-size: 14px;
+
+.user-detail {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.post + .post {
+    margin-top: 20px;
+}
+
+.container-comment {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #feffee;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-a {
+      text-decoration: none;
+      color:midnightblue;
+}
+
+.text-write {
+      text-decoration: none;
 }

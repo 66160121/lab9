@@ -2,24 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
+    background-color: #ffffff;
+}                                        /*การกำหนดค่าพื้นฐาน  -ใช้ฟอนต์ -ตั้งค่า margin และ padding เพื่อลบระยะขอบของหน้าเว็บ  -ตั้งค่า background-colorเพื่อให้พื้นหลังดูสบายตา */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f0eeee;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 20px;
-}
+}                                       /*การกำหนดค่าพื้นฐาน -กำหนดความกว้างสูงสุดของคอนเทนเนอร์ -จัดกึ่งกลางด้วย -เพิ่มระยะขอบภายใน -กำหนดพื้นหลังเป็นสี -เพิ่มเงา ทำมุมโค้ง (border-radius: 8px;)*/
 
 h1 {
     text-align: center;
     color: #333;
     font-size: 2em;
-}
+}                                       /*การกำหนดสไตล์ (หัวเรื่องใหญ่) -จัดให้อยู่กึ่งกลาง (text-align: center;) -กำหนดขนาดฟอนต์ให้ใหญ่ */
 
 .back-button {
     display: inline-block;
@@ -30,24 +30,24 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
-}
+}                                       /*. การกำหนดสไตล์ปุ่ม "ย้อนกลับ" -ทำให้เป็นปุ่ม (display: inline-block;) -ตั้งค่าพื้นหลัง -กำหนดให้ข้อความเป็นสีขาว -ลบขีดเส้นใต้ (text-decoration: none;) -ปรับขนาดตัวอักษร -กำหนดมุมโค้ง*/
 
 .back-button:hover {
     background-color: #45a049;
-}
+}                                              /*สไตล์เมื่อเมาส์ชี้ที่ปุ่ม -เมื่อชี้เมาส์ที่ปุ่มจะเปลี่ยนสี*/ 
 
 .user-list {
     margin-top: 20px;
-}
+}                                               
 
 .user-list p {
     font-size: 1.1em;
     color: #555;
-}
+}                                               /*การกำหนดสไตล์รายการผู้ใช้ -กำหนดให้มีระยะห่างด้านบน(margin-top: 20px;) -ตั้งค่าสีข้อความ -ปรับขนาดตัวอักษร1.1em */
 
 .posts-list {
     margin-top: 20px;
-}
+}                                               /*การกำหนดสไตล์รายการโพสต์ -กำหนดระยะห่างด้านบน  */
 
 .posts-list .post {
     background-color: #f9f9f9;
@@ -55,17 +55,17 @@ h1 {
     margin-bottom: 15px;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+}                                                       /*สไตล์ของโพสต์แต่ละอัน -ใช้พื้นหลัง -ทำมุมโค้ง -เพิ่มเงา -เพิ่ม padding และ margin-bottom เพื่อให้ดูเป็นระเบียบ */
 
 .posts-list .post h2 {
     font-size: 1.5em;
     color: #333;
-}
+}                                       /*การกำหนดหัวข้อของโพสต์*/
 
 .posts-list .post p {
     color: #666;
     line-height: 1.6;
-}
+}                                           /*การกำหนดเนื้อหาโพสต์*/
 
 .view-posts-btn {
     background-color: #2196F3;
@@ -75,16 +75,16 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-}
+}                                       /* การกำหนดสไตล์ปุ่ม "ดูโพสต์" (.view-posts-btn)*/
 
 .view-posts-btn a {
     color: white;
     text-decoration: none; 
-}
+}                                          
 
 .view-posts-btn:hover {
     background-color: #1976D2;
-}
+}                                                   /*เมื่อเมาส์ชี้ที่ปุ่ม -เปลี่ยนเป็นสีน้ำเงินเข้ม */
 
 .user-detail {
     margin-top: 20px;
@@ -92,7 +92,7 @@ h1 {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+}                                                   /*การกำหนดสไตล์รายละเอียดผู้ใช้ (.user-detail)*/
 
 .user-detail p {
     font-size: 1.2em;
@@ -109,13 +109,13 @@ h1 {
     background-color: #feffee;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+}                                                           /*การกำหนดสไตล์ส่วนความคิดเห็น (.container-comment) */
 
 .text-a {
       text-decoration: none;
       color:midnightblue;
-}
+}                                   /*การกำหนดลิงก์ (.text-a และ .text-write) ทำให้ลิงก์ไม่มีขีดเส้นใต้ (text-decoration: none;)*/
 
 .text-write {
       text-decoration: none;
-}
+}                                           /*ทำให้ข้อความไม่มีขีดเส้นใต้ (text-decoration: none;)*/
